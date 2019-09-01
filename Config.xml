@@ -1,0 +1,30 @@
+<Configuration>
+  <Name>Twilio SMS Notifications Addon</Name>
+  <Author>Atlas Systems, Inc.</Author>
+  <Version>1.1.0</Version>
+  <Active>true</Active>
+  <Type>Server</Type>
+  
+  <Description>Sends SMS Notifications using the Twilio API</Description>
+
+  <Settings>
+	<Setting name='AccountSID' value='' type='string'>
+	      <Description>The Twilio Account SID provided in your Twilio account settings.</Description>
+    	</Setting>
+	<Setting name='AuthToken' value='' type='string'>
+	      <Description>The Twilio AuthToken provided in your Twilio account Settings.</Description>
+	</Setting>
+	<Setting name='FromNumber' value='' type='string'>
+	      <Description>A Twilio phone number enabled for the type of message you wish to send. Only phone numbers or short codes purchased from Twilio work here.</Description>
+	</Setting>
+	<Setting name='ActiveNVTGC' value='' type='string'>
+	      <Description>If shared server, a comma separated list of NVTGC's that use this addon for sending SMS notifications. This setting is ignored for single server instances.</Description>
+    	</Setting>
+  </Settings>
+
+  <Forms/>
+
+  <Files>
+	<File>TwilioSMSNotifications.lua</File>
+  </Files>
+</Configuration>
